@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Confirmação de Entrega - Grupo Flora</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    padding:30px;
+}
+
+.container{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.logo img{
+    width:180px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.opcoes{
+    margin-bottom:20px;
+}
+
+.opcoes label{
+    display:block;
+    margin-bottom:8px;
+    cursor:pointer;
+}
+
+input[type="text"]{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    width:100%;
+    height:80px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#e754a6;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#d94396;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="logo.png" alt="Grupo Flora">
+    </div>
+
+    <h2>Confirmação de Entrega</h2>
+
+    <!-- OPÇÕES -->
+    <div class="opcoes">
+        <label><input type="radio" name="entrega"> Em mãos</label>
+        <label><input type="radio" name="entrega"> Vizinho</label>
+        <label><input type="radio" name="entrega"> Portaria / Recepção</label>
+        <label><input type="radio" name="entrega"> Familiar</label>
+        <label><input type="radio" name="entrega"> Outro</label>
+    </div>
+
+    <!-- NOME -->
+    <label>Nome:</label>
+    <input type="text" placeholder="Digite o nome de quem recebeu">
+
+    <!-- ASSINATURA -->
+    <label>Assinatura:</label>
+    <textarea placeholder="Assinatura digital ou observação"></textarea>
+
+    <!-- FOTO -->
+    <label>Adicionar Foto:</label>
+    <input type="file" accept="image/*">
+
+    <br><br>
+
+    <button>Confirmar Entrega</button>
+
+</div>
+
+</body>
+</html>
